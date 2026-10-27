@@ -1,0 +1,6 @@
+{
+  "name": "Rising Hands Organisation",
+  "description": "Official website for Rising Hands Organisation (RHO), a Tanzanian non-governmental organisation empowering children, youth, women, and vulnerable communities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

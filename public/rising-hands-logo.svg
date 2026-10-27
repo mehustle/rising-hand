@@ -1,0 +1,398 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 560" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Gold Gradient -->
+    <linearGradient id="rhoGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CA9A36" />
+      <stop offset="25%" stop-color="#F2D17C" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="75%" stop-color="#F9E298" />
+      <stop offset="100%" stop-color="#9C731A" />
+    </linearGradient>
+
+    <!-- Deep Navy Gradient for Hands & Silhouettes -->
+    <linearGradient id="rhoNavyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F2B55" />
+      <stop offset="50%" stop-color="#081A38" />
+      <stop offset="100%" stop-color="#040E1E" />
+    </linearGradient>
+
+    <!-- Hand Highlight (Left) -->
+    <linearGradient id="rhoHandHighlightL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#234E8A" />
+      <stop offset="50%" stop-color="#0D254C" />
+      <stop offset="100%" stop-color="#061328" />
+    </linearGradient>
+
+    <!-- Hand Highlight (Right) -->
+    <linearGradient id="rhoHandHighlightR" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#234E8A" />
+      <stop offset="50%" stop-color="#0D254C" />
+      <stop offset="100%" stop-color="#061328" />
+    </linearGradient>
+
+    <!-- Radiant Sun Radial Gradient -->
+    <radialGradient id="rhoSunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="30%" stop-color="#FEEF9E" />
+      <stop offset="65%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </radialGradient>
+
+    <!-- Sun Ray Gradient -->
+    <linearGradient id="rhoRayGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#D4AF37" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#FDE68A" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- Golden Heart Radial Gradient -->
+    <radialGradient id="rhoHeartGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFF5C0" />
+      <stop offset="35%" stop-color="#F3C853" />
+      <stop offset="75%" stop-color="#C99424" />
+      <stop offset="100%" stop-color="#845D0F" />
+    </radialGradient>
+
+    <!-- Soft drop shadow for emblem -->
+    <filter id="rhoDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#001733" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- ==================== EMBLEM (Top) ==================== -->
+  <g id="rhoEmblem" transform="translate(50, 20)" filter="url(#rhoDropShadow)">
+    <!-- Sky Background Disc -->
+    <circle cx="200" cy="200" r="160" fill="#FFFFFF" />
+
+    <!-- Top Golden Frame Arc -->
+    <path
+      d="M 60,200 A 148,148 0 0,1 340,200"
+      fill="none"
+      stroke="url(#rhoGoldGrad)"
+      stroke-width="8"
+      stroke-linecap="round"
+    />
+    <!-- Inner Fine Golden Bevel Arc -->
+    <path
+      d="M 68,200 A 140,140 0 0,1 332,200"
+      fill="none"
+      stroke="#FFF3C4"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      opacity="0.8"
+    />
+
+    <!-- ================= RADIANT SUN RAYS ================= -->
+    <g id="rhoSunRays" fill="url(#rhoRayGrad)">
+      <!-- Center vertical ray -->
+      <polygon points="197,148 200,56 203,148" />
+      <!-- Left rays -->
+      <polygon points="186,150 178,61 192,152" />
+      <polygon points="175,155 158,72 181,159" />
+      <polygon points="166,163 140,88 172,168" />
+      <polygon points="159,173 126,108 165,179" />
+      <polygon points="155,185 118,132 161,192" />
+      <!-- Right rays -->
+      <polygon points="214,150 222,61 208,152" />
+      <polygon points="225,155 242,72 219,159" />
+      <polygon points="234,163 260,88 228,168" />
+      <polygon points="241,173 274,108 235,179" />
+      <polygon points="245,185 282,132 239,192" />
+    </g>
+
+    <!-- ================= RISING SUN ================= -->
+    <circle cx="200" cy="160" r="38" fill="url(#rhoSunGlow)" />
+    <circle cx="200" cy="160" r="38" fill="none" stroke="url(#rhoGoldGrad)" stroke-width="1" opacity="0.6" />
+
+    <!-- ================= FLYING BIRDS ================= -->
+    <g id="rhoBirds" fill="#081A38">
+      <!-- Upper left bird -->
+      <path d="M 124,102 C 128,96 134,98 138,102 C 142,98 148,96 152,102 C 146,101 142,104 138,106 C 134,104 130,101 124,102 Z" />
+      <!-- Lower left bird -->
+      <path d="M 114,122 C 117,118 122,119 125,122 C 128,119 133,118 136,122 C 132,121 128,124 125,125 C 122,124 119,121 114,122 Z" />
+      <!-- Upper right bird -->
+      <path d="M 264,100 C 268,95 273,97 277,100 C 281,97 286,95 290,100 C 285,99 281,102 277,104 C 273,102 269,99 264,100 Z" />
+      <!-- Lower right bird -->
+      <path d="M 270,126 C 273,122 277,123 280,126 C 283,123 287,122 290,126 C 286,125 283,128 280,129 C 277,128 274,125 270,126 Z" />
+    </g>
+
+    <!-- ================= HILL OF HOPE ================= -->
+    <path
+      d="M 118,236 Q 200,208 282,236 L 282,260 Q 200,240 118,260 Z"
+      fill="#081A38"
+    />
+
+    <!-- ================= THREE JOYFUL CHILDREN ================= -->
+    <g id="rhoChildren" fill="#081A38">
+      <!-- ===== CENTER CHILD (Both arms raised high) ===== -->
+      <!-- Head with textured curls -->
+      <circle cx="200" cy="144" r="8.5" />
+      <circle cx="196" cy="140" r="2.5" />
+      <circle cx="200" cy="138" r="2.8" />
+      <circle cx="204" cy="140" r="2.5" />
+      <!-- Torso / Shirt -->
+      <path d="M 194,153 L 206,153 L 204,175 L 196,175 Z" />
+      <!-- Left Arm raised high towards sun -->
+      <path d="M 195,154 L 180,132 L 183,130 L 198,154 Z" />
+      <circle cx="179" cy="130" r="2.2" />
+      <!-- Right Arm raised high towards sun -->
+      <path d="M 205,154 L 220,132 L 217,130 L 202,154 Z" />
+      <circle cx="221" cy="130" r="2.2" />
+      <!-- Shorts -->
+      <path d="M 196,175 L 204,175 L 206,188 L 201,188 L 200,181 L 199,188 L 194,188 Z" />
+      <!-- Left Leg planted on hill -->
+      <path d="M 195,188 L 194,208 L 198,208 L 199,188 Z" />
+      <!-- Right Leg planted on hill -->
+      <path d="M 201,188 L 202,208 L 206,208 L 205,188 Z" />
+
+      <!-- ===== LEFT CHILD (Girl with ponytail, arm raised) ===== -->
+      <!-- Head -->
+      <circle cx="165" cy="153" r="7.5" />
+      <!-- Ponytail swinging left -->
+      <path d="M 160,152 C 150,148 144,156 142,163 C 148,166 154,161 159,156 Z" />
+      <!-- Dress -->
+      <path d="M 160,161 L 170,161 L 176,188 L 154,188 Z" />
+      <!-- Left Arm raised towards center -->
+      <path d="M 168,162 L 181,146 L 183,148 L 171,166 Z" />
+      <circle cx="182" cy="146" r="2" />
+      <!-- Right Arm by side -->
+      <path d="M 160,163 L 152,176 L 155,178 L 162,167 Z" />
+      <!-- Legs -->
+      <path d="M 160,188 L 159,211 L 163,211 L 164,188 Z" />
+      <path d="M 166,188 L 167,211 L 171,211 L 170,188 Z" />
+
+      <!-- ===== RIGHT CHILD (Younger child pointing up) ===== -->
+      <!-- Head -->
+      <circle cx="236" cy="159" r="7" />
+      <!-- Torso -->
+      <path d="M 231,167 L 241,167 L 240,185 L 232,185 Z" />
+      <!-- Left Arm pointing up to sun -->
+      <path d="M 232,168 L 221,153 L 223,151 L 234,167 Z" />
+      <circle cx="221" cy="151" r="2" />
+      <!-- Right Arm resting down -->
+      <path d="M 241,169 L 248,181 L 246,183 L 239,173 Z" />
+      <!-- Shorts -->
+      <path d="M 232,185 L 240,185 L 241,194 L 237,194 L 236,189 L 235,194 L 231,194 Z" />
+      <!-- Legs -->
+      <path d="M 232,194 L 232,212 L 235,212 L 236,194 Z" />
+      <path d="M 237,194 L 238,212 L 241,212 L 240,194 Z" />
+    </g>
+
+    <!-- ================= RISING HANDS (Cradling the Base) ================= -->
+    <!-- Left Cupped Hand -->
+    <path
+      d="M 200,344 
+         C 165,338 120,305 92,262 
+         C 68,224 58,180 58,160 
+         C 64,165 72,176 77,194 
+         C 82,172 90,162 96,168 
+         C 99,182 101,198 100,214 
+         C 105,190 114,178 120,184 
+         C 123,196 122,216 118,230 
+         C 134,204 148,206 150,214 
+         C 152,226 142,246 132,260 
+         C 150,268 174,286 182,300 
+         C 188,312 196,330 200,344 Z"
+      fill="url(#rhoHandHighlightL)"
+    />
+
+    <!-- Right Cupped Hand (Mirror) -->
+    <path
+      d="M 200,344 
+         C 235,338 280,305 308,262 
+         C 332,224 342,180 342,160 
+         C 336,165 328,176 323,194 
+         C 318,172 310,162 304,168 
+         C 301,182 299,198 300,214 
+         C 295,190 286,178 280,184 
+         C 277,196 278,216 282,230 
+         C 266,204 252,206 250,214 
+         C 248,226 258,246 268,260 
+         C 250,268 226,286 218,300 
+         C 212,312 204,330 200,344 Z"
+      fill="url(#rhoHandHighlightR)"
+    />
+
+    <!-- Base Palm Outline / Shadow Accent -->
+    <path
+      d="M 68,185 C 64,220 78,265 106,300 C 134,332 170,345 200,348 C 230,345 266,332 294,300 C 322,265 336,220 332,185 C 330,172 334,165 338,162 C 342,185 332,232 308,270 C 278,315 235,348 200,352 C 165,348 122,315 92,270 C 68,232 58,185 62,162 C 66,165 70,172 68,185 Z"
+      fill="url(#rhoNavyGrad)"
+      opacity="0.9"
+    />
+
+    <!-- Outer Hand Gold Rim Contour -->
+    <path
+      d="M 60,195 C 60,240 85,290 120,325 C 145,348 175,356 200,358 C 225,356 255,348 280,325 C 315,290 340,240 340,195"
+      fill="none"
+      stroke="url(#rhoGoldGrad)"
+      stroke-width="3"
+      opacity="0.85"
+    />
+
+    <!-- ================= GOLDEN HEART (Base Junction) ================= -->
+    <g id="rhoBaseHeart" transform="translate(0, 5)">
+      <!-- Outer Heart Glow / Border -->
+      <path
+        d="M 200,336 
+           C 194,328 178,312 178,298 
+           C 178,286 188,278 197,284 
+           C 199,285 200,288 200,289 
+           C 200,288 201,285 203,284 
+           C 212,278 222,286 222,298 
+           C 222,312 206,328 200,336 Z"
+        fill="#FFFFFF"
+        opacity="0.95"
+      />
+      <!-- Golden Embossed Heart -->
+      <path
+        d="M 200,334 
+           C 195,327 181,313 181,300 
+           C 181,289 189,282 197,287 
+           C 199,288 200,290 200,291 
+           C 200,290 201,288 203,287 
+           C 211,282 219,289 219,300 
+           C 219,313 205,327 200,334 Z"
+        fill="url(#rhoHeartGrad)"
+        stroke="#FFF2AA"
+        stroke-width="1"
+      />
+    </g>
+  </g>
+
+  <!-- ==================== TYPOGRAPHY (Bottom) ==================== -->
+  <!-- 1. "RISING HANDS" (Regal Serif) -->
+  <text
+    x="250"
+    y="420"
+    font-family="'Playfair Display', Georgia, serif"
+    font-size="34"
+    font-weight="900"
+    letter-spacing="5"
+    fill="#002147"
+    text-anchor="middle"
+  >
+    RISING HANDS
+  </text>
+
+  <!-- 2. "— ORGANISATION —" (Golden Trajan Sans) -->
+  <g id="rhoOrganisationLockup">
+    <!-- Left Dash -->
+    <line x1="95" y1="442" x2="135" y2="442" stroke="url(#rhoGoldGrad)" stroke-width="2" stroke-linecap="round" />
+    <!-- Text -->
+    <text
+      x="250"
+      y="447"
+      font-family="'Plus Jakarta Sans', Arial, sans-serif"
+      font-size="16"
+      font-weight="800"
+      letter-spacing="9"
+      fill="#D4AF37"
+      text-anchor="middle"
+    >
+      ORGANISATION
+    </text>
+    <!-- Right Dash -->
+    <line x1="365" y1="442" x2="405" y2="442" stroke="url(#rhoGoldGrad)" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- 3. "BUILDING BRIGHTER FUTURE TOGETHER" between gold horizontal divider lines -->
+  <g id="rhoMottoLockup">
+    <!-- Top Divider Line -->
+    <line x1="75" y1="468" x2="425" y2="468" stroke="url(#rhoGoldGrad)" stroke-width="1.2" />
+    
+    <!-- Motto Text -->
+    <text
+      x="250"
+      y="484"
+      font-family="'Plus Jakarta Sans', Arial, sans-serif"
+      font-size="10.5"
+      font-weight="800"
+      letter-spacing="3.2"
+      fill="#002147"
+      text-anchor="middle"
+    >
+      BUILDING BRIGHTER FUTURE TOGETHER
+    </text>
+    
+    <!-- Bottom Divider Line with Center Diamond Motif -->
+    <line x1="75" y1="496" x2="242" y2="496" stroke="url(#rhoGoldGrad)" stroke-width="1.2" />
+    <!-- Center Diamond -->
+    <polygon points="250,493 253,496 250,499 247,496" fill="#D4AF37" />
+    <line x1="258" y1="496" x2="425" y2="496" stroke="url(#rhoGoldGrad)" stroke-width="1.2" />
+  </g>
+
+  <!-- 4. FOUR PILLARS ICON ROW (EDUCATE • EMPOWER • INSPIRE • TRANSFORM) -->
+  <g id="rhoPillarsRow" transform="translate(0, 508)">
+    <!-- Column 1: EDUCATE (Book & Student) -->
+    <g transform="translate(105, 0)">
+      <!-- Open Book -->
+      <path d="M -14,14 C -7,11 0,14 0,14 C 0,14 7,11 14,14 L 14,24 C 7,21 0,23 0,23 C 0,23 -7,21 -14,24 Z" fill="#002147" />
+      <!-- Book spine divider -->
+      <line x1="0" y1="14" x2="0" y2="23" stroke="#FFFFFF" stroke-width="1" />
+      <!-- Child / Sun reading above -->
+      <circle cx="0" cy="5" r="3.5" fill="#D4AF37" />
+      <path d="M -5,11 C -5,8 -2,7 0,7 C 2,7 5,8 5,11 Z" fill="#D4AF37" />
+      <!-- Label -->
+      <text x="0" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="800" letter-spacing="1.5" fill="#002147" text-anchor="middle">
+        EDUCATE
+      </text>
+    </g>
+
+    <!-- Divider 1 -->
+    <line x1="165" y1="5" x2="165" y2="35" stroke="url(#rhoGoldGrad)" stroke-width="1" opacity="0.6" />
+
+    <!-- Column 2: EMPOWER (Hands holding Heart) -->
+    <g transform="translate(202, 0)">
+      <!-- Golden Heart -->
+      <path d="M 0,12 C -3,7 -9,9 -9,13 C -9,17 0,21 0,21 C 0,21 9,17 9,13 C 9,9 3,7 0,12 Z" fill="#D4AF37" />
+      <!-- Cradling Hands -->
+      <path d="M -12,18 C -12,18 -9,24 0,25 C 9,24 12,18 12,18 C 10,21 6,26 0,26 C -6,26 -10,21 -12,18 Z" fill="#002147" />
+      <!-- Label -->
+      <text x="0" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="800" letter-spacing="1.5" fill="#002147" text-anchor="middle">
+        EMPOWER
+      </text>
+    </g>
+
+    <!-- Divider 2 -->
+    <line x1="242" y1="5" x2="242" y2="35" stroke="url(#rhoGoldGrad)" stroke-width="1" opacity="0.6" />
+
+    <!-- Column 3: INSPIRE (Three Figures with Star) -->
+    <g transform="translate(282, 0)">
+      <!-- Shining Star -->
+      <polygon points="0,3 1.5,7 6,7 2.5,9.5 4,14 0,11.5 -4,14 -2.5,9.5 -6,7 -1.5,7" fill="#D4AF37" />
+      <!-- Center Person -->
+      <circle cx="0" cy="18" r="3" fill="#002147" />
+      <path d="M -4.5,26 C -4.5,23 -2,22 0,22 C 2,22 4.5,23 4.5,26 Z" fill="#002147" />
+      <!-- Left Person -->
+      <circle cx="-8" cy="20" r="2.5" fill="#002147" opacity="0.85" />
+      <path d="M -12,27 C -12,24 -10,24 -8,24 C -6,24 -4.5,24.5 -4.5,26.5 Z" fill="#002147" opacity="0.85" />
+      <!-- Right Person -->
+      <circle cx="8" cy="20" r="2.5" fill="#002147" opacity="0.85" />
+      <path d="M 4.5,26.5 C 4.5,24.5 6,24 8,24 C 10,24 12,24 12,27 Z" fill="#002147" opacity="0.85" />
+      <!-- Label -->
+      <text x="0" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="800" letter-spacing="1.5" fill="#002147" text-anchor="middle">
+        INSPIRE
+      </text>
+    </g>
+
+    <!-- Divider 3 -->
+    <line x1="322" y1="5" x2="322" y2="35" stroke="url(#rhoGoldGrad)" stroke-width="1" opacity="0.6" />
+
+    <!-- Column 4: TRANSFORM (Globe with Heart) -->
+    <g transform="translate(362, 0)">
+      <!-- Globe Circle -->
+      <circle cx="0" cy="14" r="10" fill="none" stroke="#002147" stroke-width="1.2" />
+      <!-- Longitude & Latitude Lines -->
+      <ellipse cx="0" cy="14" rx="5" ry="10" fill="none" stroke="#002147" stroke-width="1" />
+      <line x1="-10" y1="14" x2="10" y2="14" stroke="#002147" stroke-width="1" />
+      <line x1="-8.5" y1="9" x2="8.5" y2="9" stroke="#002147" stroke-width="0.8" stroke-dasharray="1,1" />
+      <line x1="-8.5" y1="19" x2="8.5" y2="19" stroke="#002147" stroke-width="0.8" stroke-dasharray="1,1" />
+      <!-- Small Golden Heart on lower right -->
+      <path d="M 6,19 C 4,16 1,17 1,20 C 1,22 6,25 6,25 C 6,25 11,22 11,20 C 11,17 8,16 6,19 Z" fill="#D4AF37" />
+      <!-- Label -->
+      <text x="0" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="800" letter-spacing="1.5" fill="#002147" text-anchor="middle">
+        TRANSFORM
+      </text>
+    </g>
+  </g>
+</svg>
